@@ -1,0 +1,21 @@
+header.header-text {
+    display: flex;
+    padding-left: 5%;
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--backgroundColorDark);
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+}
+
+header.header-text h1 {
+    font-size: 2.75vmax;
+}
+
+header.header-text h3 {
+    color: var(--textColorDark);
+    font-size: 1.5vmax;
+    font-weight: 300;
+}
