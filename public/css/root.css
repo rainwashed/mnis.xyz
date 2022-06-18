@@ -5,6 +5,9 @@
     --backgroundColorDark: #050505;
     --textColorPrimary: #fff;
     --textColorDark: #828282;
+    --colorRed: #d63031;
+    --colorError: var(--colorRed);
+    --colorGrey: #b2bec3;
 }
 
 * {

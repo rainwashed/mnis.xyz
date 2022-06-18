@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mynameisandrew.xyz</title>
-    <link rel="stylesheet" href="./public/css/root.css" type="text/css">
-    <link rel="stylesheet" href="./public/css/index.css" type="text/css">
-</head>
-<body>
-    <div class="fs-section">
-        <header class="header-text">
-            <h1 class="parallax-modifier" data-parallax-accel="1">My name is Andrew</h1>
-            <h3 class="parallax-modifier" data-parallax-accel="1.5">and I am a <span id="self-props">developer</span>.</h3>
-        </header>
-        <!-- place a particle-js background here (align right side) -->
-        <div>
-            <button class="scrolldwn-btn">Scroll Down</button>
-        </div>
-    </div>
-    <div class="fs-section">
-        <p>I am Andrew. I am self-taught programmer who lives in Michigan, United States. I am very ambitious with many goals set ahead of me, both short-term and long-term. I enjoy working with others, especially in fields that I enjoy like computer science. I have big dreams and I want to execute them. I am highly interested in working and developing work experience and work ability. I am open to job offers as of currently and I am very flexible, as I can work many different jobs.</p> <!-- Update this to be better English -->
-
-        <div class="strengths">
-            <div class="strength-card">
-                
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>mynameisandrew.xyz</title>
+        <link rel="stylesheet" href="./public/css/root.css" type="text/css" />
+        <link rel="stylesheet" href="./public/css/index.css" type="text/css" />
+    </head>
+    <body>
+        <div class="fs-section">
+            <header class="header-text">
+                <h1 class="parallax-modifier" data-parallax-accel="1">
+                    My name is Andrew
+                </h1>
+                <h3 class="parallax-modifier" data-parallax-accel="1.5">
+                    and I am a <span id="self-props">developer</span>.
+                </h3>
+            </header>
+            <!-- place a particle-js background here (align right side) -->
+            <div>
+                <button class="scrolldwn-btn">Scroll Down</button>
             </div>
         </div>
-    </div>
-    <script src="./public/javascript/lib/particles.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        particlesJS.load("particle-bg", "public/particle.json", () => console.log("Particle.js configuration loaded!"));
-    </script>
-    <script src="./public/javascript/script.js" type="text/javascript"></script>
-</body>
+        <div class="fs-section">
+            <h1>What is a programmer?</h1>
+            <div>
+                <h3>A programmer is</h3>
+                <canvas
+                    id="programmer-cube"
+                    class="programmer-cube-canvas"
+                ></canvas>
+                <!-- Work on 3d rotating cube that displays programmer attr -->
+                <script type="text/javascript">
+                    (() => {
+                        const cube = document.getElementById("programmer-cube");
+                        const width = 250;
+                        const height = 75;
+
+                        cube.width = width;
+                        cube.height = height;
+
+                        const gl = cube.getContext("webgl");
+
+                        if (gl === null)
+                            return cube.classList.add("webgl-not-supported");
+
+                        gl.clearColor(0, 0, 0, 1);
+                        gl.clear(gl.COLOR_BUFFER_BIT);
+                    })();
+                </script>
+            </div>
+        </div>
+        <div class="fs-section">
+            <h1>What am I?</h1>
+        </div>
+        <script
+            src="./public/javascript/lib/particles.min.js"
+            type="text/javascript"
+        ></script>
+        <script type="text/javascript">
+            particlesJS.load("particle-bg", "public/particle.json", () =>
+                console.log("Particle.js configuration loaded!")
+            );
+        </script>
+        <script
+            src="./public/javascript/script.js"
+            type="text/javascript"
+        ></script>
+    </body>
 </html>
