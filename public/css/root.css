@@ -6,8 +6,9 @@
     --textColorPrimary: #fff;
     --textColorDark: #828282;
     --colorRed: #d63031;
-    --colorError: var(--colorRed);
     --colorGrey: #b2bec3;
+    /* variable aliases */
+    --colorError: var(--colorRed);
 }
 
 * {
