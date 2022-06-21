@@ -6,9 +6,13 @@
     --textColorPrimary: #fff;
     --textColorDark: #828282;
     --colorRed: #d63031;
+    --colorYellow: #ffeaa7;
+    --colorBlue: #0984e3;
     --colorGrey: #b2bec3;
     /* variable aliases */
     --colorError: var(--colorRed);
+    --colorJavascript: var(--colorYellow);
+    --colorPython: var(--colorBlue);
 }
 
 * {

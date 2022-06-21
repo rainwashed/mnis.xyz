@@ -1,4 +1,6 @@
-const parallaxElements = Array.from(document.getElementsByClassName("parallax-modifier"));
+const parallaxElements = Array.from(
+    document.getElementsByClassName("parallax-modifier")
+);
 
 function moveParallax(event) {
     parallaxElements.forEach((elem) => {
@@ -10,6 +12,17 @@ function moveParallax(event) {
     });
 }
 
-document.getElementsByClassName("header-text")[0].addEventListener("mousemove", moveParallax);
+document
+    .getElementsByClassName("header-text")[0]
+    .addEventListener("mousemove", moveParallax);
 
-const selfAttributes = ["developer", "minimalist", "revolutionist", "hard-worker", "learner", "problem-solver", "programmer", "coder"];
+const selfAttributes = [
+    "developer",
+    "minimalist",
+    "revolutionist",
+    "hard-worker",
+    "learner",
+    "problem-solver",
+    "programmer",
+    "coder",
+];

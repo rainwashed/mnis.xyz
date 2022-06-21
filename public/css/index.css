@@ -63,13 +63,16 @@ header.header-text ~ div {
     font-size: 3vmax;
 }
 
-.fs-section:nth-child(2) div canvas {
+.fs-section:nth-child(2) div div.programmer-cube-canvas {
+    padding: 20px;
+    height: 100%;
+    width: auto;
     border: 2px solid rgba(100, 100, 100, 0.3);
     /* backdrop-filter: blur(20px); */
 }
 
-canvas.programmer-cube-canvas.webgl-not-supported {
-    border: 2px solid var(--colorError) !important;
+.fs-section:nth-child(2) div div.programmer-cube-canvas span {
+    font-size: 3vmax;
 }
 
 /* style reusable */
@@ -77,4 +80,10 @@ canvas.programmer-cube-canvas.webgl-not-supported {
     color: var(--colorGrey);
     font-size: 4vmax;
     font-weight: 300;
+}
+
+a.link-button {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
 }
