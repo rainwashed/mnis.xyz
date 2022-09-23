@@ -48,6 +48,7 @@ ul.navigation_bar {
     align-items: center;
     list-style: none;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 ul.navigation_bar div {
@@ -55,6 +56,10 @@ ul.navigation_bar div {
     left: 2%;
     top: 50%;
     transform: translateY(-50%);
+}
+
+ul.navigation_bar div span {
+    font-size: 80%;
 }
 
 ul.navigation_bar li {
@@ -76,10 +81,21 @@ li.navigation__item i {
 li.navigation__item a {
     color: var(--accentColorPrimary);
     text-decoration: none;
+    transition: filter 250ms linear;
+}
+
+li.navigation__item a:hover,
+li.navigation__item a:focus {
+    filter: brightness(1.5);
 }
 
 main section {
     min-width: 40%;
     max-width: 75%;
     border: 2px solid red;
+}
+
+main section:nth-child(1) img {
+    width: auto;
+    height: 650px;
 }
