@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>mynameisandrew.xyz</title>
+        <title>Home - mnis.xyz</title>
         <script
             src="https://kit.fontawesome.com/05a3d751a1.js"
             crossorigin="anonymous"
@@ -15,6 +15,11 @@
             href="./public/css/pages/index.css"
             type="text/css"
         />
+        <link
+            rel="shortcut icon"
+            href="./public/assets/favicon.png"
+            type="image/png"
+        />
     </head>
     <body>
         <ul class="navigation_bar">
@@ -23,7 +28,7 @@
             </div>
             <li class="navigation__item" title="Site Home">
                 <i class="fa-solid fa-house"></i>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
             </li>
             <li class="navigation__item" title="Freshman Art Program">
                 <i class="fa-solid fa-paint-roller"></i>
@@ -40,10 +45,21 @@
                     My name is Andrew. I am a freshman at International Academy
                     East and partake in the art's program here.
                 </p>
-                <img
-                    src="./public/assets/about-me-foto.jpg"
-                    alt="about-me-foto"
-                />
+                <div class="section-photo">
+                    <img
+                        src="./public/assets/about-me-foto.jpg"
+                        alt="about-me-foto"
+                    />
+                    <p>
+                        <i
+                            >Me in Serbia
+                            <img
+                                src="./public/assets/flag-serbia_1f1f7-1f1f8.png"
+                                alt="Flag RS"
+                                draggable="false"
+                        /></i>
+                    </p>
+                </div>
             </section>
             <section>
                 <h3><i>Why did I take art?</i></h3>
@@ -72,13 +88,15 @@
                         program offered by International Academy to teach
                         students about art. MYP, more precisely, MYP1, is the
                         first year of Art at International Academy. This is an
-                        intro to art, both for those who have past experiences
+                        intro to art, both for those who have past experience
                         and those who don't. It teaches the fundamentals of art,
                         analyzing art, and the process and mindset needed to
                         create a work.
                     </p>
                 </div>
             </section>
+            <div style="height: 20vh"></div>
         </main>
+        <script src="./public/js/pages/index.page.js" type="module"></script>
     </body>
 </html>

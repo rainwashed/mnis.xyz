@@ -43,3 +43,73 @@ button {
     transition: outline 250ms linear;
     outline: 2px solid rgba(100, 100, 100, 0.25);
 }
+
+::-webkit-scrollbar {
+    width: 0.35em;
+    z-index: -1;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accentColorPrimary);
+    border-radius: 50px;
+}
+
+ul.navigation_bar {
+    position: fixed;
+    display: flex;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 5vh;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+ul.navigation_bar div {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+ul.navigation_bar div span {
+    font-size: 80%;
+}
+
+ul.navigation_bar li {
+    display: flex;
+    margin: 0 1%;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.navigation_bar li * {
+    margin: 0.125em;
+}
+
+li.navigation__item i {
+    color: var(--accentColorSecondary);
+}
+
+li.navigation__item a {
+    color: var(--accentColorPrimary);
+    text-decoration: none;
+    transition: filter 250ms linear;
+}
+
+li.navigation__item a:hover,
+li.navigation__item a:focus {
+    filter: brightness(1.5);
+}

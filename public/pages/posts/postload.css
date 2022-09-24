@@ -1,0 +1,30 @@
+body {
+    padding: 2% !important;
+    padding-bottom: 5% !important;
+    overflow-x: hidden;
+}
+
+*:not(hr) {
+    margin: 0.35em 0;
+    padding: 0.2em;
+}
+
+button#close-btn {
+    position: fixed;
+    left: 100%;
+    top: 0;
+    width: 5vmin;
+    height: 5vmin;
+    transform: translateX(-100%);
+    background-color: transparent;
+    color: #d63031;
+    font-size: 125%;
+    border: none;
+    outline: none;
+    transition: filter 250ms ease;
+}
+
+button:hover,
+button:focus {
+    filter: brightness(2);
+}
